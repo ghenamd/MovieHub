@@ -14,4 +14,8 @@ public interface MovieClient {
 
     @GET("popular?")
     Call<Movie> getPopularMovies(@Query("api_key") String apiKey);
+    @GET("top_rated?")
+    Call<Movie> getTopRatedMovies(@Query("api_key") String apiKey);
+    @GET("upcoming?")
+    Call<Movie> getUpcomingMovies(@Query("api_key")String apiKey);
 }

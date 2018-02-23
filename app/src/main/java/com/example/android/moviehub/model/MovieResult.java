@@ -3,11 +3,13 @@ package com.example.android.moviehub.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.io.Serializable;
+
 /**
  * Created by Ghena on 20/02/2018.
  */
 
-public class MovieResult {
+public class MovieResult implements Serializable{
     @Expose
     @SerializedName("poster_path")
     private String posterPath;
